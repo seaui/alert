@@ -1,0 +1,35 @@
+{
+  "family": "seaui",
+  "name": "alert",
+  "version": "1.0.0",
+  "description": "The best project ever.",
+  "homepage": "https://github.com/wqh/alert",
+  "author": "chanh",
+  "maintainers": [
+    "chanh"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wqh/alert.git"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "keywords": [],
+  "licenses": {
+      "type": "MIT",
+      "url": "https://github.com/seaui/alert/blob/master/LICENSE"
+  },
+  "spm": {
+    "output": [
+      "alert.js",
+      "alert.css"
+    ],
+    "alias": {
+        "$": "jquery/jquery/1.10.1/jquery",
+        "transition": "seaui/transition/1.0.0/transition"
+    },
+    "devAlias": {},
+    "engines": {}
+  }
+}
