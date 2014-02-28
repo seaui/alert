@@ -1,7 +1,7 @@
 define(function(require, exports, module) {
     var $ = require('$');
     require('transition');
-    require('./alerts.css');
+    require('./alert.css');
     'use strict';
 
     // ALERT CLASS DEFINITION
