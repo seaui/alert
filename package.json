@@ -2,7 +2,7 @@
   "family": "seaui",
   "name": "alert",
   "version": "1.0.0",
-  "description": "The best project ever.",
+  "description": "通过这个插件可以为所有警告框增加关闭功能。",
   "homepage": "https://github.com/wqh/alert",
   "author": "chanh",
   "maintainers": [
@@ -17,8 +17,8 @@
   },
   "keywords": [],
   "licenses": {
-      "type": "MIT",
-      "url": "https://github.com/seaui/alert/blob/master/LICENSE"
+    "type": "MIT",
+    "url": "https://github.com/seaui/alert/blob/master/LICENSE"
   },
   "spm": {
     "output": [
@@ -26,10 +26,14 @@
       "alert.css"
     ],
     "alias": {
-        "$": "jquery/jquery/1.10.1/jquery",
-        "transition": "seaui/transition/1.0.0/transition"
+      "$": "jquery/jquery/1.10.1/jquery",
+      "transition": "seaui/transition/1.0.0/transition"
     },
-    "devAlias": {},
+    "devAlias": {
+      "sea": "sea-modules\\seajs\\seajs\\2.1.1\\sea",
+      "seajs-style": "sea-modules\\seajs\\seajs-style\\1.0.2\\seajs-style",
+      "base.css": "sea-modules\\seaui\\base\\1.0.0\\base.css"
+    },
     "engines": {}
   }
 }
