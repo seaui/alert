@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8" />
+    <title>alert--test</title>
+    <link rel="stylesheet" href="../sea-modules/seaui/base/1.0.0/base.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="alert alert-danger fade in">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <h4>Oh snap! You got an error!</h4>
+                <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+                <p>
+                    <button type="button" class="btn btn-danger">Take this action</button>
+                    <button type="button" class="btn btn-default">Or do this</button>
+                </p>
+            </div>
+            <div class="alert alert-warning fade in">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../sea-modules/seajs/seajs/2.1.1/sea.js"></script>
+<script src="../sea-modules/seajs/seajs-style/1.0.2/seajs-style.js" ></script>
+<script type="text/javascript">
+    seajs.config({
+        alias:{
+            "$": "jquery/jquery/1.10.1/jquery",
+            "transition": "seaui/transition/1.0.0/transition",
+            "alert": "seaui/alert/1.0.0/alert"
+        }
+    });
+    // For development
+    if (location.href.indexOf("?dev") > 0) {
+        seajs.use("../src/alert")
+    }
+    // For production
+    else {
+        seajs.use(["seajs/seajs-style/1.0.2/seajs-style", "alert"])
+    }
+</script>
+</body>
+</html>
