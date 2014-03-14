@@ -6,20 +6,6 @@
 
 ---
 
-## 案例
-
-````html
-<div class="alert alert-danger fade in">
-    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-    <h4>Oh snap! You got an error!</h4>
-    <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
-    <p>
-      <button type="button" class="btn btn-danger">Take this action</button>
-      <button type="button" class="btn btn-default">Or do this</button>
-    </p>
-</div>
-````
-
 ## 用法
 
 通过JavaScript启用警告框关闭功能：
@@ -32,9 +18,9 @@ $(".alert").alert()
 
 只需为关闭按钮设置`data-dismiss="alert"`即可自动为警告框赋予关闭功能。
 
-````html
+```html
 <a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
-````
+```
 
 ### 方法
 
