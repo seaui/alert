@@ -2,6 +2,7 @@
 
 ---
 
+[![Build Status](https://travis-ci.org/seaui/alert.svg?branch=develop)](https://travis-ci.org/seaui/alert)
 通过这个插件可以为所有警告框增加关闭功能。
 
 ---
