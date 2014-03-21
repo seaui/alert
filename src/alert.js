@@ -29,14 +29,14 @@ define(function(require, exports, module) {
             $parent = $this.hasClass('alert') ? $this : $this.parent()
         }
 
-        $parent.trigger(e = $.Event('close.bs.alert'))
+        $parent.trigger(e = $.Event('close.su.alert'))
 
         if (e.isDefaultPrevented()) return
 
         $parent.removeClass('in')
 
         function removeElement() {
-            $parent.trigger('closed.bs.alert').remove()
+            $parent.trigger('closed.su.alert').remove()
         }
 
         $.support.transition && $parent.hasClass('fade') ?
@@ -55,9 +55,9 @@ define(function(require, exports, module) {
     $.fn.alert = function (option) {
         return this.each(function () {
             var $this = $(this)
-            var data  = $this.data('bs.alert')
+            var data  = $this.data('su.alert')
 
-            if (!data) $this.data('bs.alert', (data = new Alert(this)))
+            if (!data) $this.data('su.alert', (data = new Alert(this)))
             if (typeof option == 'string') data[option].call($this)
         })
     }
@@ -77,6 +77,6 @@ define(function(require, exports, module) {
     // ALERT DATA-API
     // ==============
 
-    $(document).on('click.bs.alert.data-api', dismiss, Alert.prototype.close)
+    $(document).on('click.su.alert.data-api', dismiss, Alert.prototype.close)
 
 });
